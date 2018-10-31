@@ -6,12 +6,54 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
    <link rel="stylesheet" href="css/style.css">
-   <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+   <link rel="shortcut icon" type="image/png" href="img/favic.png">
    <title>trillo &mdash; Your all-in-one booking app</title>
 </head>
 
 <body>
-   Trillo
+   <div class="container"> 
+      <header class="header">
+         <img src="img/logo.png" alt="trillo logo" class="logo">
+         <form action="#" class="search">
+            <input type="text" class="search__input" placeholder="search hotels..">
+            <button class="search__button">
+               <svg class="search__icon">
+                  <use xlink:href="img/sprite.svg#icon-magnifying-glass" />
+               </svg>
+            </button>
+         </form>
+
+         <nav class="user-nav">
+            <div class="user-nav__icon-box">
+               <svg class="user-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-bookmark" />
+               </svg>
+               <span class="user-nav__notification">7</span>
+            </div>
+
+            <div class="user-nav__icon-box">
+               <svg class="user-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-chat" />
+               </svg>
+               <span class="user-nav__notification">13</span>
+            </div>
+
+            <div class="user-nav__user">
+               <img src="img/user.jpg" alt="user-photo" class="user-nav__user-photo">
+               <span class="user-nav__user-name">Meldrick</span>
+            </div>
+         </nav>
+      </header> <!-- End header -->
+
+      <div class="content"> <!-- Flex container -->
+         <nav class="sidebar"> <!-- Side bar -->
+            NAvigation
+         </nav>
+         <main class="hotel-view"> <!-- Main content -->
+            Hotel view
+         </main>
+      </div>
+   </div> <!-- End container -->
 </body>
 
 </html>
